@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar class='headerHome' color = "w2dg">
+    <ion-title>What2DoSTL</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <img src = "../../assets/imgs/stl_skyline.png">
+  <h2>Please choose your preferences: </h2>
+  <!--<ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let choice of choices"> <button ion-button small color="w2dg" round>{{choice.input_label}}</button></ion-col>
+   </ion-row>
+  </ion-grid>-->
+  
+    <ion-item *ngFor="let choice of getChoices();">
+      <ion-label color="w2db">{{choice.input_label}}</ion-label>
+      <ion-checkbox color="dark" (click)="addValue(choice.input_id)"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Query Date</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)] = "dateSel"></ion-datetime>
+    </ion-item>
+    <ion-item class="button">
+      <button ion-button small color="w2dg" round (click) = "arrayQuery(dateSel);">Submit</button>
+    </ion-item>
+  
+</ion-content>

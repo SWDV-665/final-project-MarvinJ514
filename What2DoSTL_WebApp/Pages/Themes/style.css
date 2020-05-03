@@ -1,0 +1,327 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,
+sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,
+tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent}
+body{line-height:1; font-family: Georgia, 'Times New Roman', Times, serif}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration: none;}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color:#05386B;
+}
+
+h2 {
+    font-size: 20px;
+    color:#05386B;
+}
+
+h3 {
+    font-size: 16px;
+    color:#05386B;
+}
+
+body,html {
+    background-color: #EDF5E1;
+    background-size: 100%;
+}
+.navbar-inverse{
+    background-color: #5CDB95;
+    padding: 20px 30px;
+    max-width: 100%;
+    margin: auto;
+}
+.navbar {
+    margin-top: 1%;
+    border: none;
+    font-size: 13px;
+    font-weight: 300;
+    position: relative;
+    min-height: 45px;
+    margin-bottom: 21px;
+}
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top:20px;
+    text-align: center;
+    float: left;
+}
+.navbar-inverse .navbar-brand {
+    color: #05386B;
+    
+}
+.logo{
+    display: inline;
+}
+a{
+    color: #05386B;
+    text-decoration: underline;
+}
+a:hover{
+    color: #379683;
+}
+@media screen and (min-width: 768px){
+    .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 768px){
+    .navbar-header {
+        background-image:url("../Images/stl skyline.png");
+        background-repeat: no-repeat;
+        height:80px;
+    }
+}
+@media screen and (min-width: 768px){
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 205px;
+    }
+}
+@media screen and (min-width: 768px){
+    .navbar-static-top {
+        border-radius: 0;
+    }
+}
+nav {
+    float: right;
+    margin-top: 25px;
+}
+nav ul li a {
+    background: #EDF5E1;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #05386B;
+    border-radius: 10px;
+}
+nav ul li a:hover {
+    background: #379683;
+    color: #EDF5E1 ;
+}
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+}
+nav ul {
+    list-style: none;
+}
+div {
+    display: block;
+}
+#pageContent {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+#pageContentNotIndex {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+main {
+    width: 100%;
+}
+#notIndex{
+    float: left;
+	width: 100%;
+}
+article {
+    padding-bottom: 20px;
+    margin: 20px;
+}
+article h2 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+article p {
+	color: rgb(0,0,0);
+}
+article ul{
+    margin-left: 20px
+}
+footer {
+	background: #5CDB95;
+	max-width: 100%;
+	margin: auto;
+	clear: both;
+    text-align: right;
+}
+footer p {
+    padding: 20px;
+}
+address {
+    padding: 10px 20px 30px 10px;
+}
+
+#linkBlack{
+    color: white;
+}
+#linkWhite{
+    color: #05386B;
+}
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    margin-right: 75px;
+    color: #FFF;
+}
+#logo img {
+    width: 125px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left:10px;
+}
+body > section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    border: 1px solid #999;
+    color: rgb(0,0,0);
+    height: 675px;
+}
+.results{
+    height: auto;
+}
+.resultSection{
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+#introduction{
+    font-size: 25px;
+    line-height: 1.5;
+}
+nav.pagebuttons{
+    float: none;
+    margin-left: 30%;
+    padding-top:20px;
+}
+nav.pagebuttons>ul li a{
+    
+    background: #379683 ;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #EDF5E1;
+    border-radius: 10px;
+}
+nav.pagebuttons>ul li a:hover {
+    background: #EDF5E1;
+    color: #379683;
+    border: 1px solid #379683;
+}
+nav.pagebuttons2{
+    float: none;
+    margin-left: 43%;
+    padding-top:5px;
+    
+}
+nav.pagebuttons2>ul li a{
+    
+    background: #379683 ;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #EDF5E1;
+    border-radius: 10px;
+}
+nav.pagebuttons2>ul li a:hover {
+    background: #EDF5E1;
+    color: #379683;
+    border: 1px solid #379683;
+}
+@media screen and (max-width: 1000px) {
+	body > section {
+		padding: 30px 20px;
+	}
+}
+@media screen and (max-width: 700px) {
+	main {
+		float: none;
+		width: 100%;
+	}
+}
+#address{
+    color:white;
+}
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 1px solid;
+}
+.preferences {
+    column-count: 5;
+}
+.userinfo{
+    width: 300px;
+    text-align: center;
+    margin-left: 33%;
+    border: none;
+    padding-top:25px;
+}
+.userinfo input[type=text], input[type=password],input[type=date],input[type=integer] {
+    width: 100%;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.useraccount .pagebuttons{
+    margin-left: 43%
+}
+.usercreation .pagebuttons{
+    margin-left: 35%
+}
+.usercreation h2{
+    text-align:center;
+}
+.guest .pagebuttons{
+    margin-left: 43%
+}
+.QueryPagebuttons{
+    margin-left:45%
+}
+input[type=submit] {
+    background: #379683 ;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #EDF5E1;
+    border-radius: 10px;
+}
+input[type=submit]:hover {
+    background: #EDF5E1;
+    color: #379683;
+    border: 1px solid #379683;
+}
+.prefButton{
+    font-size: 20px;
+    margin-left: 0%
+}

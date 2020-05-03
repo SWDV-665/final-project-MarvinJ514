@@ -1,0 +1,8 @@
+{
+  "name": "What2DoSTL",
+  "app_id": "548d820d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

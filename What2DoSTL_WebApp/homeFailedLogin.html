@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>What2DoSTL</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./Pages/Themes/style.css">
+        <link rel="stylesheet" href="./Pages/Themes/loginPrompt.css">
+        <script type="text/javascript" src="./Pages/JS/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./Pages/JS/mustache.js"></script>
+        <script type="text/javascript" src="./Pages/JS/HomeData.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script type="text/JavaScript">
+            alert("Credentials Incorrect! Please verify Email and Password!!")
+        </script>
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation" aria-label="Primary">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">What2DoSTL</div>
+                    <nav>
+                        <ul>
+                            <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+                            <li><a href="./Pages/Guest/Guest.html">Guest</a>	
+                        </ul>  
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section id="pageContent" aria-label="Media Streaming Types">
+            <script id="intro_template" type="x-tmpl-mustache">
+                {{#introduction}}
+                    <article>
+                            <p>{{description}}</p>
+                    </article>
+                {{/introduction}}
+            </script>
+            <main role="main" id="introduction"></main>
+            <nav class="pagebuttons">
+                <ul>
+                    <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+                    <li><a href="./Pages/UserCreation/UserCreation.html">Create Account</a></li>
+                    <li><a href="./Pages/Guest/Guest.html">Guest</a>	
+                </ul>  
+            </nav>
+        </section>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="./App/authenticate.php" method="post">
+                <div class="container2">
+                    <label for="email"><b>Email/Username</b></label>
+                    <input type="text" name="email" placeholder="Enter Email"  id="email" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" name="password" placeholder="Enter Password" id="password" required>
+                    <button type="submit" value="Login">Login</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="create"><a href="./Pages/UserCreation/UserCreation.html">Create Account</a></span>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2020, Edited by Marvin Johnson </p>
+        </footer>
+    </body>
+
+</html>
